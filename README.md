@@ -1,8 +1,9 @@
-# (TODO: your game's title)
+# Cube Hopper
 
-Author: (TODO: your name)
+Author: Eric Schneider
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: This is a nice little 3D game in which you play as a cube that has to hop to safety as the floor it stands on *plummets*.
+It's about the most fun I could squeeze out without collisions or physics :)
 
 Screen Shot:
 
@@ -10,9 +11,16 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+The ground below you will fade through a series of colors, then fall.
+Your goal is to not be on a square that falls.
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Move: WASD  
+Camera: Mouse  
+Ungrab Mouse: Esc  
+Restart: R  
+
+Sources: I made the assets myself :)  
+Thanks to the Blender Foundation for making Blender, Jim McCann for his codebase that I built upon, and Pablo Wilson for letting me scream my OpenGL frustrations at him.
 
 This game was built with [NEST](NEST.md).
 
