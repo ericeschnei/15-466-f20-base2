@@ -51,8 +51,10 @@ struct PlayMode : Mode {
 
 	glm::ivec2 player_tile_old;
 	glm::ivec2 player_tile_new;
+	glm::vec3  player_rot_axis;
+	glm::quat  player_rot;
 
-	static constexpr float CUBE_ANIM_TIME = 0.1f;
+	static constexpr float CUBE_ANIM_TIME = 0.5f;
 
 	// to drop out a pillar, we start the "pillar_animation_time" variable.
 	// this starts out at zero, and goes to ANIM_TIME.

@@ -8,6 +8,7 @@
 #include "gl_errors.hpp"
 #include "data_path.hpp"
 #include "glm/ext/matrix_transform.hpp"
+#include "glm/ext/scalar_constants.hpp"
 
 #include <ctime>
 #include <glm/gtc/type_ptr.hpp>
@@ -46,6 +47,10 @@ PlayMode::PlayMode() : scene(*pillar_scene) {
 
 	camera->transform->rotation = glm::quat(glm::vec3(x_default, 0.0f, z_default));
 	camera->transform->position = glm::vec3(60.0f, 0.0f, 20.0f);
+
+	player_rot = glm::quat(glm::vec3(0.0f, 0.0f, 0.0f));
+	player_rot_axis = glm::vec3(0.0f, 0.0f, 0.0f);
+
 	size_t pillar_arr_ptr = 0;
 	for (auto drawable = scene.drawables.begin(); drawable != scene.drawables.end(); drawable++) {
 		Scene::Transform *transform = drawable->transform;
@@ -113,24 +118,28 @@ bool PlayMode::handle_event(SDL_Event const &evt, glm::uvec2 const &window_size)
 				left.pressed = true;
 				if (player_tile_old.y > 0) {
 					player_tile_new = player_tile_old + glm::ivec2(0, -1);
+					player_rot_axis = glm::vec3(1.0f, 0.0f, 0.0f);
 				}
 			} else if (evt.key.keysym.sym == SDLK_d) {
 				right.downs += 1;
 				right.pressed = true;
 				if (player_tile_old.y < (int)pillar_width - 1) {
 					player_tile_new = player_tile_old + glm::ivec2(0, 1);
+					player_rot_axis = glm::vec3(-1.0f, 0.0f, 0.0f);
 				}
 			} else if (evt.key.keysym.sym == SDLK_w) {
 				up.downs += 1;
 				up.pressed = true;
 				if (player_tile_old.x > 0) {
 					player_tile_new = player_tile_old + glm::ivec2(-1, 0);
+					player_rot_axis = glm::vec3(0.0f, -1.0f, 0.0f);
 				}
 			} else if (evt.key.keysym.sym == SDLK_s) {
 				down.downs += 1;
 				down.pressed = true;
 				if (player_tile_old.x < (int)pillar_width - 1) {
 					player_tile_new = player_tile_old + glm::ivec2(1, 0);
+					player_rot_axis = glm::vec3(0.0f, 1.0f, 0.0f);
 				}
 			} else {
 				return false;
@@ -188,10 +197,11 @@ void PlayMode::update(float elapsed) {
 	timer += elapsed;
 	while (timer >= 0.1f) {
 		timer -= 0.1f;
-
-		size_t i = mt() % (pillar_width * pillar_width);
-		if (pillar_animation_time[i] == 0.0f) {
-			pillar_animation_time[i] = 0.0001f;
+		for (size_t j = 0; j < (size_t)(time_survived)/15 + 1; j++) {
+			size_t i = mt() % (pillar_width * pillar_width);
+			if (pillar_animation_time[i] == 0.0f) {
+				pillar_animation_time[i] = 0.0001f;
+			}
 		}
 
 	}
@@ -203,6 +213,7 @@ void PlayMode::update(float elapsed) {
 	if (cube_animation_time > CUBE_ANIM_TIME) {
 		cube_animation_time = 0.0f;
 		player_tile_old = player_tile_new;
+		player_rot = glm::angleAxis(glm::pi<float>()/2.0f, player_rot_axis) * player_rot;
 	}
 
 	for (float &f : pillar_animation_time) {
@@ -256,11 +267,17 @@ void PlayMode::update(float elapsed) {
 			(player_tile_new.y - (int)(pillar_width / 2)) * pillar_distance, 
 			pillars[player_tile_new.y * pillar_width + player_tile_new.x]->position.z + 1.0f);
 
-	cube->position = glm::mix(cube_pos_old, cube_pos_new, cube_animation_time/CUBE_ANIM_TIME);
+
+	float jump_amt = (cube_animation_time/CUBE_ANIM_TIME - 0.5f);
+	jump_amt = -4.0f * jump_amt * jump_amt + 1.0f;
+	jump_amt *= 3.0f;
+
+	cube->position = glm::mix(cube_pos_old, cube_pos_new, cube_animation_time/CUBE_ANIM_TIME) + glm::vec3(0.0f, 0.0f, jump_amt);
 	if (cube->position.z < -4.0f) {
 		alive = false;
 	}
 
+	cube->rotation = glm::angleAxis(glm::pi<float>()/2.0f * (cube_animation_time/CUBE_ANIM_TIME), player_rot_axis) * player_rot;
 	//reset button press counters:
 	left.downs = 0;
 	right.downs = 0;
