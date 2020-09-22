@@ -50,6 +50,12 @@ PlayMode::PlayMode() : scene(*pillar_scene) {
 
 	player_rot = glm::quat(glm::vec3(0.0f, 0.0f, 0.0f));
 	player_rot_axis = glm::vec3(0.0f, 0.0f, 0.0f);
+	
+
+	for (float & f : pillar_animation_time) {
+		f = 0.0f;
+	}
+	cube_animation_time = 0.0f;
 
 	size_t pillar_arr_ptr = 0;
 	for (auto drawable = scene.drawables.begin(); drawable != scene.drawables.end(); drawable++) {
@@ -110,6 +116,7 @@ bool PlayMode::handle_event(SDL_Event const &evt, glm::uvec2 const &window_size)
 			timer = 0.0f;
 			cube_animation_time = 0.0f;
 			alive = true;
+			player_rot = glm::quat(glm::vec3(0.0f, 0.0f, 0.0f));
 			return true;
 		// don't allow a move if we're already animating a move
 		} else if (cube_animation_time == 0.0f) {
