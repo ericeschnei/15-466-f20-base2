@@ -20,6 +20,7 @@ if len(args) != 2:
 
 import bpy
 
+
 infile = args[0]
 collection_name = None
 m = re.match(r'^(.*):([^:]+)$', infile)

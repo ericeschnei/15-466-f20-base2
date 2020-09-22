@@ -74,6 +74,7 @@ GAME_NAMES =
 	PlayMode
 	main
 	LitColorTextureProgram
+	CustomTextureProgram
 	#ColorTextureProgram #not used right now, but you might want it
 	;
 

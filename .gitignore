@@ -7,4 +7,5 @@ dist/game
 dist/game.exe
 scenes/show-meshes*
 scenes/show-scene*
+.clangd/
 *.blend[0-9]
