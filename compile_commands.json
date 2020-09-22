@@ -1,0 +1,443 @@
+[
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/ShowMeshesMode.o",
+            "ShowMeshesMode.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "ShowMeshesMode.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/PathFont-font.o",
+            "PathFont-font.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "PathFont-font.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/GL.o",
+            "GL.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "GL.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/Mode.o",
+            "Mode.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "Mode.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/show-scene.o",
+            "show-scene.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "show-scene.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/ShowSceneMode.o",
+            "ShowSceneMode.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "ShowSceneMode.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/main.o",
+            "main.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "main.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/ShowMeshesProgram.o",
+            "ShowMeshesProgram.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "ShowMeshesProgram.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/load_save_png.o",
+            "load_save_png.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "load_save_png.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/data_path.o",
+            "data_path.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "data_path.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/ColorProgram.o",
+            "ColorProgram.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "ColorProgram.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/gl_compile_program.o",
+            "gl_compile_program.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "gl_compile_program.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/DrawLines.o",
+            "DrawLines.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "DrawLines.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/ShowSceneProgram.o",
+            "ShowSceneProgram.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "ShowSceneProgram.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/LitColorTextureProgram.o",
+            "LitColorTextureProgram.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "LitColorTextureProgram.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/Scene.o",
+            "Scene.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "Scene.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/PathFont.o",
+            "PathFont.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "PathFont.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/Load.o",
+            "Load.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "Load.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/Mesh.o",
+            "Mesh.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "Mesh.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/show-meshes.o",
+            "show-meshes.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "show-meshes.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-no-pie",
+            "-std=c++17",
+            "-g",
+            "-Wall",
+            "-Werror",
+            "-I../nest-libs/linux/SDL2/include/SDL2",
+            "-D_REENTRANT",
+            "-I../nest-libs/linux/glm/include",
+            "-I../nest-libs/linux/libpng/include",
+            "-O",
+            "-o",
+            "objs/PlayMode.o",
+            "PlayMode.cpp"
+        ],
+        "directory": "/home/eric/homework/15466/15-466-f20-base2",
+        "file": "PlayMode.cpp"
+    }
+]
