@@ -192,7 +192,7 @@ void PlayMode::update(float elapsed) {
 
 	time_survived += elapsed;
 
-	static std::mt19937 mt = std::mt19937(time(0));
+	static std::mt19937 mt = std::mt19937((unsigned int)time(0));
 
 	timer += elapsed;
 	while (timer >= 0.1f) {
